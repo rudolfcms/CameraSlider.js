@@ -438,6 +438,7 @@
 }
 .camera_wrap .camera_pag .camera_pag_ul li.cameracurrent > span {
 	background: #434648;
+	color: #fff;
 }
 .camera_pag_ul li img {
 	border: 4px solid #e6e6e6;
