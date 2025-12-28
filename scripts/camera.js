@@ -670,6 +670,7 @@
 					t.attr('src',cloneSrc);
 					var imgFakeUrl = opts.imagePath+'blank.gif';
 					var imgFake = new Image();
+					imgFake.alt = "";
 					imgFake.src = imgFakeUrl;
 					if(opts.height.indexOf('%')!=-1) {
 						var startH = Math.round(w / (100/parseFloat(opts.height)));
@@ -941,6 +942,7 @@
 					if($('> div', elem).eq(i).attr('data-thumb')!='') {
 						var thumbUrl = $('> div', elem).eq(i).attr('data-thumb'),
 							newImg = new Image();
+						newImg.alt = "";
 						newImg.src = thumbUrl;
 						$('ul',thumbs).append('<li class="pix_thumb pix_thumb_'+i+'" />');
 						$('li.pix_thumb_'+i,thumbs).append($(newImg).attr('class','camera_thumb'));
@@ -951,6 +953,7 @@
 					if($('> div', elem).eq(i).attr('data-thumb')!='') {
 						var thumbUrl = $('> div', elem).eq(i).attr('data-thumb'),
 							newImg = new Image();
+						newImg.alt = "";
 						newImg.src = thumbUrl;
 						$('li.pag_nav_'+i,pagination).append($(newImg).attr('class','camera_thumb').css({'position':'absolute'}).animate({opacity:0},0));
 						$('li.pag_nav_'+i+' > img',pagination).after('<div class="thumb_arrow" />');
@@ -1103,6 +1106,7 @@
 		if(!$('.imgLoaded',slide).length){
 			var imgUrl = allImg[slideI];
 			var imgLoaded = new Image();
+			imgLoaded.alt = "";
 			imgLoaded.src = imgUrl +"?"+ new Date().getTime();
 			slide.css('visibility','hidden');
 			slide.prepend($(imgLoaded).attr('class','imgLoaded').css('visibility','hidden'));
@@ -1124,6 +1128,7 @@
 			if( allImg.length > (slideI+1) && !$('.imgLoaded',slideNext).length ){
 				var imgUrl2 = allImg[(slideI+1)];
 				var imgLoaded2 = new Image();
+				imgLoaded2.alt = "";
 				imgLoaded2.src = imgUrl2 +"?"+ new Date().getTime();
 				slideNext.prepend($(imgLoaded2).attr('class','imgLoaded').css('visibility','hidden'));
 				imgLoaded2.onload = function() {
