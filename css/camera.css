@@ -1066,3 +1066,15 @@
 .camera_yellow_skin .camera_commands > .camera_stop {
 	background-position: -120px -1240px	;
 }
+.camera_visually_hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}

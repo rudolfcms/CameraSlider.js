@@ -908,7 +908,7 @@
 			$(pagination).append('<ul class="camera_pag_ul" />');
 			var li;
 			for (li = 0; li < amountSlide; li++){
-				$('.camera_pag_ul',wrap).append('<li class="pag_nav_'+li+'" style="position:relative; z-index:1002"><span><span>'+li+'</span></span></li>');
+				$('.camera_pag_ul',wrap).append('<li class="pag_nav_'+li+'" style="position:relative; z-index:1002"><span><span class="camera_visually_hidden">'+li+'</span></span></li>');
 			}
 			$('.camera_pag_ul li',wrap).hover(function(){
 				$(this).addClass('camera_hover');
